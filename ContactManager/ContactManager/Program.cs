@@ -25,7 +25,7 @@ class Program
                     AddContact(contacts);
                     break;
                 case "2":
-                    ShowAllContacts(contacts);
+                    DisplayAllContacts(contacts);
                     break;
                 case "3":
                     FindContactByName(contacts);
@@ -56,15 +56,29 @@ class Program
         contacts.Add(new Contact(firstName, lastName, email, phoneNumer));
         Console.WriteLine("Kontakt został pomyślnie dodany!");
     }
+    private static void DisplayAllContacts(List<Contact> contacts)
+    {
+        Console.WriteLine("\n __LISTA KONTAKTÓW:___");
+
+        if (contacts.Count != 0)
+        {
+            foreach (Contact contact in contacts)
+            {
+                Console.WriteLine(contact);
+            }
+        }
+        else
+        {
+            Console.WriteLine("Lista kontaktów jest pusta");
+        }
+            
+    }
     private static void FindContactByName(List<Contact> contacts)
     {
         throw new NotImplementedException();
     }
 
-    private static void ShowAllContacts(List<Contact> contacts)
-    {
-        throw new NotImplementedException();
-    }
+
 
 
 }
