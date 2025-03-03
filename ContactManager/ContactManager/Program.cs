@@ -5,7 +5,8 @@
     {
         static void Main(string[] args)
         {
-           
+           ContactManager contactManager = new ContactManager();
+
 
             string userInput;
 
@@ -24,13 +25,13 @@
                 switch (userInput)
                 {
                     case "1":
-                        AddContact(contacts);
+                        contactManager.AddContact();
                         break;
                     case "2":
-                        DisplayAllContacts(contacts);
+                        contactManager.DisplayAllContacts();
                         break;
                     case "3":
-                        FindContactByName(contacts);
+                        contactManager.FindContactByName();
                         break;
                     case "4":
                         Console.WriteLine("Dziękujemy za skorzystanie z aplikacji!");
