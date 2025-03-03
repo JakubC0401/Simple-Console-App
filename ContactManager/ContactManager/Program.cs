@@ -60,17 +60,16 @@ class Program
     {
         Console.WriteLine("\n __LISTA KONTAKTÓW:___");
 
-        if (contacts.Count != 0)
-        {
-            foreach (Contact contact in contacts)
-            {
-                Console.WriteLine(contact);
-            }
-        }
-        else
+        if (contacts.Count == 0)
         {
             Console.WriteLine("Lista kontaktów jest pusta");
+            return;
         }
+        foreach (Contact contact in contacts)
+        {
+            Console.WriteLine(contact);
+        }
+
             
     }
     private static void FindContactByName(List<Contact> contacts)
