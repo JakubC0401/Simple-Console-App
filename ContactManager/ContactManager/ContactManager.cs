@@ -1,5 +1,7 @@
 ﻿
 
+using System.Text.Json;
+
 namespace ContactManager
 {
     class ContactManager: IContactManager
@@ -67,6 +69,43 @@ namespace ContactManager
             }
 
         }
+
+        public void SaveToFile(string filePath)
+        {
+            try
+            {
+                var json = JsonSerializer.Serialize(contacts, new JsonSerializerOptions { WriteIndented = true });
+                File.WriteAllText(filePath, json);
+
+                Console.WriteLine($"Kontakt został zapisany do pliku: {filePath} ");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Bład w czasie zapisywania danych do pliku: {ex.Message} ");
+            }
+        }
+        public void LoadFromFile(string filePath)
+        {
+            try
+            {
+                if (File.Exists(filePath))
+                {
+                    var json = File.ReadAllText(filePath);
+                    contacts = JsonSerializer.Deserialize<List<Contact>>(json) ?? new List<Contact>();
+                    Console.WriteLine($"Kontakty zostały wczytane z pliku: {filePath} ");
+                }
+                else
+                {
+
+                    Console.WriteLine($"Plik o podanej ścieżce: {filePath} nie istnieje :( ");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Bład w czasie wczytywania danych z pliku: {ex.Message} ");
+            }
+        }
+
 
     }
 }

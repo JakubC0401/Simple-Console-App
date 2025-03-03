@@ -10,6 +10,8 @@
 
             string userInput;
 
+            string filePath = "contacts.json";
+
             Console.WriteLine("______APLIKACJA DO ZARZĄDZANIA KONTAKTAMI______");
 
             do
@@ -18,7 +20,9 @@
                 Console.WriteLine("1. Dodaj nowy kontakt");
                 Console.WriteLine("2. Wyświetl wszystkie kontakty");
                 Console.WriteLine("3. Wyszukaj kontakt po imieniu");
-                Console.WriteLine("4. Wyjdź z aplikacji");
+                Console.WriteLine("4. Zapisz kontakty do pliku");
+                Console.WriteLine("5. Wczytaj kontakty z pliku");
+                Console.WriteLine("6. Wyjdź z aplikacji");
 
                 userInput = Console.ReadLine();
 
@@ -34,6 +38,12 @@
                         contactManager.FindContactByName();
                         break;
                     case "4":
+                        contactManager.SaveToFile(filePath); 
+                        break;
+                    case "5":
+                        contactManager.LoadFromFile(filePath);
+                        break;
+                    case "6":
                         Console.WriteLine("Dziękujemy za skorzystanie z aplikacji!");
                         break;
                     default:
@@ -41,7 +51,7 @@
                         break;
                 }
 
-            } while (userInput != "4");
+            } while (userInput != "6");
 
         }
 

@@ -6,5 +6,7 @@
         void DisplayAllContacts();
         void FindContactByName();
 
+        void SaveToFile(string filePath);
+        void LoadFromFile(string filePath);
     }
 }
