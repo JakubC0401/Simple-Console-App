@@ -5,7 +5,7 @@
     {
         static void Main(string[] args)
         {
-           ContactManager contactManager = new ContactManager();
+            IContactManager contactManager = new ContactManager();
 
 
             string userInput;
