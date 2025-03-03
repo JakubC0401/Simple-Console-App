@@ -1,0 +1,15 @@
+C:\Users\Jakub\Desktop\Simple Console App\Simple-Console-App\ContactManager\ContactManager\bin\Debug\net9.0\ContactManager.exe
+C:\Users\Jakub\Desktop\Simple Console App\Simple-Console-App\ContactManager\ContactManager\bin\Debug\net9.0\ContactManager.deps.json
+C:\Users\Jakub\Desktop\Simple Console App\Simple-Console-App\ContactManager\ContactManager\bin\Debug\net9.0\ContactManager.runtimeconfig.json
+C:\Users\Jakub\Desktop\Simple Console App\Simple-Console-App\ContactManager\ContactManager\bin\Debug\net9.0\ContactManager.dll
+C:\Users\Jakub\Desktop\Simple Console App\Simple-Console-App\ContactManager\ContactManager\bin\Debug\net9.0\ContactManager.pdb
+C:\Users\Jakub\Desktop\Simple Console App\Simple-Console-App\ContactManager\ContactManager\obj\Debug\net9.0\ContactManager.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jakub\Desktop\Simple Console App\Simple-Console-App\ContactManager\ContactManager\obj\Debug\net9.0\ContactManager.AssemblyInfoInputs.cache
+C:\Users\Jakub\Desktop\Simple Console App\Simple-Console-App\ContactManager\ContactManager\obj\Debug\net9.0\ContactManager.AssemblyInfo.cs
+C:\Users\Jakub\Desktop\Simple Console App\Simple-Console-App\ContactManager\ContactManager\obj\Debug\net9.0\ContactManager.csproj.CoreCompileInputs.cache
+C:\Users\Jakub\Desktop\Simple Console App\Simple-Console-App\ContactManager\ContactManager\obj\Debug\net9.0\ContactManager.sourcelink.json
+C:\Users\Jakub\Desktop\Simple Console App\Simple-Console-App\ContactManager\ContactManager\obj\Debug\net9.0\ContactManager.dll
+C:\Users\Jakub\Desktop\Simple Console App\Simple-Console-App\ContactManager\ContactManager\obj\Debug\net9.0\refint\ContactManager.dll
+C:\Users\Jakub\Desktop\Simple Console App\Simple-Console-App\ContactManager\ContactManager\obj\Debug\net9.0\ContactManager.pdb
+C:\Users\Jakub\Desktop\Simple Console App\Simple-Console-App\ContactManager\ContactManager\obj\Debug\net9.0\ContactManager.genruntimeconfig.cache
+C:\Users\Jakub\Desktop\Simple Console App\Simple-Console-App\ContactManager\ContactManager\obj\Debug\net9.0\ref\ContactManager.dll
