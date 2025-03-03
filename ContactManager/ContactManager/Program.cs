@@ -58,7 +58,7 @@ class Program
     }
     private static void DisplayAllContacts(List<Contact> contacts)
     {
-        Console.WriteLine("\n __LISTA KONTAKTÓW:___");
+        Console.WriteLine("\n ___LISTA KONTAKTÓW:___");
 
         if (contacts.Count == 0)
         {
@@ -74,7 +74,37 @@ class Program
     }
     private static void FindContactByName(List<Contact> contacts)
     {
-        throw new NotImplementedException();
+        Console.WriteLine("\n ___WYSZUKIWANIE KONTAKTU___");
+        Console.WriteLine("Podaj imię do wyszukania: ");
+        string searchName = Console.ReadLine();
+
+        var foundContacts = contacts.FindAll(c => c.FirstName.Contains(searchName, StringComparison.OrdinalIgnoreCase)).ToList();
+
+        if (foundContacts.Count == 0)
+        {
+            Console.WriteLine("Brak takiego kontaktu");
+            return;
+        }
+
+        if (foundContacts.Count > 0)
+        {
+            if (contacts.Count == 1)
+            {
+                Console.WriteLine($"Znaleziono: {contacts.Count} pasujący kontakt");
+            }
+            else
+            {
+                foreach (Contact contact in foundContacts)
+                {
+                    Console.WriteLine($"Znaleziono: {contacts.Count} pasujących kontaktów");
+                    Console.WriteLine(contact);
+                }
+            }
+        }
+        else
+        {
+            Console.WriteLine("Brak kontaktów do wyświetlenia....");
+        }
     }
 
 
