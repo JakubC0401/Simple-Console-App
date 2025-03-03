@@ -2,7 +2,7 @@
 
 namespace ContactManager
 {
-    class ContactManager
+    class ContactManager: IContactManager
     {
         List<Contact> contacts = new List<Contact>();
         public void AddContact()
