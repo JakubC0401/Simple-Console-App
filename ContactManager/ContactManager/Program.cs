@@ -1,113 +1,52 @@
-﻿
-class Program
+﻿namespace ContactManager
 {
-    static void Main(string[] args)
+
+    class Program
     {
-        List<Contact> contacts = new List<Contact>();
-
-        string userInput;
-
-        Console.WriteLine("______APLIKACJA DO ZARZĄDZANIA KONTAKTAMI______");
-
-        do
+        static void Main(string[] args)
         {
-            Console.WriteLine("\n Wybierz jedną z opcji: ");
-            Console.WriteLine("1. Dodaj nowy kontakt");
-            Console.WriteLine("2. Wyświetl wszystkie kontakty");
-            Console.WriteLine("3. Wyszukaj kontakt po imieniu");
-            Console.WriteLine("4. Wyjdź z aplikacji");
+           
 
-            userInput = Console.ReadLine();
+            string userInput;
 
-            switch (userInput)
+            Console.WriteLine("______APLIKACJA DO ZARZĄDZANIA KONTAKTAMI______");
+
+            do
             {
-                case "1":
-                    AddContact(contacts);
-                    break;
-                case "2":
-                    DisplayAllContacts(contacts);
-                    break;
-                case "3":
-                    FindContactByName(contacts);
-                    break;
-                case "4":
-                    Console.WriteLine("Dziękujemy za skorzystanie z aplikacji!");
-                    break;
-                default:
-                    Console.WriteLine("niepoprawnie wybrano opcje");
-                    break;
-            }
+                Console.WriteLine("\n Wybierz jedną z opcji: ");
+                Console.WriteLine("1. Dodaj nowy kontakt");
+                Console.WriteLine("2. Wyświetl wszystkie kontakty");
+                Console.WriteLine("3. Wyszukaj kontakt po imieniu");
+                Console.WriteLine("4. Wyjdź z aplikacji");
 
-        } while (userInput != "4");
+                userInput = Console.ReadLine();
 
-    }
-    private static void AddContact(List<Contact> contacts)
-    {
-        Console.WriteLine("\n ___DODAJ NOWY KONTAKT___");
-        Console.WriteLine("Podaj imię: ");
-        string firstName = Console.ReadLine();
-        Console.WriteLine("Podaj nazwisko: ");
-        string lastName = Console.ReadLine();
-        Console.WriteLine("Podaj adres email: ");
-        string email = Console.ReadLine();
-        Console.WriteLine("Podaj numer telefonu: ");
-        string phoneNumer = Console.ReadLine();
-
-        contacts.Add(new Contact(firstName, lastName, email, phoneNumer));
-        Console.WriteLine("Kontakt został pomyślnie dodany!");
-    }
-    private static void DisplayAllContacts(List<Contact> contacts)
-    {
-        Console.WriteLine("\n ___LISTA KONTAKTÓW:___");
-
-        if (contacts.Count == 0)
-        {
-            Console.WriteLine("Lista kontaktów jest pusta");
-            return;
-        }
-        foreach (Contact contact in contacts)
-        {
-            Console.WriteLine(contact);
-        }
-
-            
-    }
-    private static void FindContactByName(List<Contact> contacts)
-    {
-        Console.WriteLine("\n ___WYSZUKIWANIE KONTAKTU___");
-        Console.WriteLine("Podaj imię do wyszukania: ");
-        string searchName = Console.ReadLine();
-
-        var foundContacts = contacts.FindAll(c => c.FirstName.Contains(searchName, StringComparison.OrdinalIgnoreCase)).ToList();
-
-        if (foundContacts.Count == 0)
-        {
-            Console.WriteLine("Brak takiego kontaktu");
-            return;
-        }
-
-        if (foundContacts.Count > 0)
-        {
-            if (contacts.Count == 1)
-            {
-                Console.WriteLine($"Znaleziono: {contacts.Count} pasujący kontakt");
-            }
-            else
-            {
-                foreach (Contact contact in foundContacts)
+                switch (userInput)
                 {
-                    Console.WriteLine($"Znaleziono: {contacts.Count} pasujących kontaktów");
-                    Console.WriteLine(contact);
+                    case "1":
+                        AddContact(contacts);
+                        break;
+                    case "2":
+                        DisplayAllContacts(contacts);
+                        break;
+                    case "3":
+                        FindContactByName(contacts);
+                        break;
+                    case "4":
+                        Console.WriteLine("Dziękujemy za skorzystanie z aplikacji!");
+                        break;
+                    default:
+                        Console.WriteLine("niepoprawnie wybrano opcje");
+                        break;
                 }
-            }
+
+            } while (userInput != "4");
+
         }
-        else
-        {
-            Console.WriteLine("Brak kontaktów do wyświetlenia....");
-        }
+
+
+
+
+
     }
-
-
-
-
 }
