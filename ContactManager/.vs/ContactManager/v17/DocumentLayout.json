@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Jakub\\Desktop\\Simple Console App\\Simple-Console-App\\ContactManager\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B5DB8066-B724-44D6-8DBD-B56096E74CB9}|ContactManager\\ContactManager.csproj|c:\\users\\jakub\\desktop\\simple console app\\simple-console-app\\contactmanager\\contactmanager\\contactmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5DB8066-B724-44D6-8DBD-B56096E74CB9}|ContactManager\\ContactManager.csproj|solutionrelative:contactmanager\\contactmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5DB8066-B724-44D6-8DBD-B56096E74CB9}|ContactManager\\ContactManager.csproj|c:\\users\\jakub\\desktop\\simple console app\\simple-console-app\\contactmanager\\contactmanager\\icontactmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5DB8066-B724-44D6-8DBD-B56096E74CB9}|ContactManager\\ContactManager.csproj|solutionrelative:contactmanager\\icontactmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BACF9338-1E6B-4BB7-887C-264CA52A2080}|ContactManager.Tests\\ContactManager.Tests.csproj|c:\\users\\jakub\\desktop\\simple console app\\simple-console-app\\contactmanager\\contactmanager.tests\\contacttest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BACF9338-1E6B-4BB7-887C-264CA52A2080}|ContactManager.Tests\\ContactManager.Tests.csproj|solutionrelative:contactmanager.tests\\contacttest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5DB8066-B724-44D6-8DBD-B56096E74CB9}|ContactManager\\ContactManager.csproj|c:\\users\\jakub\\desktop\\simple console app\\simple-console-app\\contactmanager\\contactmanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5DB8066-B724-44D6-8DBD-B56096E74CB9}|ContactManager\\ContactManager.csproj|solutionrelative:contactmanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5DB8066-B724-44D6-8DBD-B56096E74CB9}|ContactManager\\ContactManager.csproj|c:\\users\\jakub\\desktop\\simple console app\\simple-console-app\\contactmanager\\contactmanager\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5DB8066-B724-44D6-8DBD-B56096E74CB9}|ContactManager\\ContactManager.csproj|solutionrelative:contactmanager\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 317,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ContactTest.cs",
+              "DocumentMoniker": "C:\\Users\\Jakub\\Desktop\\Simple Console App\\Simple-Console-App\\ContactManager\\ContactManager.Tests\\ContactTest.cs",
+              "RelativeDocumentMoniker": "ContactManager.Tests\\ContactTest.cs",
+              "ToolTip": "C:\\Users\\Jakub\\Desktop\\Simple Console App\\Simple-Console-App\\ContactManager\\ContactManager.Tests\\ContactTest.cs",
+              "RelativeToolTip": "ContactManager.Tests\\ContactTest.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAIwFwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T17:59:14.122Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IContactManager.cs",
+              "DocumentMoniker": "C:\\Users\\Jakub\\Desktop\\Simple Console App\\Simple-Console-App\\ContactManager\\ContactManager\\IContactManager.cs",
+              "RelativeDocumentMoniker": "ContactManager\\IContactManager.cs",
+              "ToolTip": "C:\\Users\\Jakub\\Desktop\\Simple Console App\\Simple-Console-App\\ContactManager\\ContactManager\\IContactManager.cs",
+              "RelativeToolTip": "ContactManager\\IContactManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T17:55:40.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ContactManager.cs",
+              "DocumentMoniker": "C:\\Users\\Jakub\\Desktop\\Simple Console App\\Simple-Console-App\\ContactManager\\ContactManager\\ContactManager.cs",
+              "RelativeDocumentMoniker": "ContactManager\\ContactManager.cs",
+              "ToolTip": "C:\\Users\\Jakub\\Desktop\\Simple Console App\\Simple-Console-App\\ContactManager\\ContactManager\\ContactManager.cs",
+              "RelativeToolTip": "ContactManager\\ContactManager.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAcwHsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T17:39:36.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Contact.cs",
+              "DocumentMoniker": "C:\\Users\\Jakub\\Desktop\\Simple Console App\\Simple-Console-App\\ContactManager\\ContactManager\\Contact.cs",
+              "RelativeDocumentMoniker": "ContactManager\\Contact.cs",
+              "ToolTip": "C:\\Users\\Jakub\\Desktop\\Simple Console App\\Simple-Console-App\\ContactManager\\ContactManager\\Contact.cs",
+              "RelativeToolTip": "ContactManager\\Contact.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAcwBsAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T17:03:18.227Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Jakub\\Desktop\\Simple Console App\\Simple-Console-App\\ContactManager\\ContactManager\\Program.cs",
+              "RelativeDocumentMoniker": "ContactManager\\Program.cs",
+              "ToolTip": "C:\\Users\\Jakub\\Desktop\\Simple Console App\\Simple-Console-App\\ContactManager\\ContactManager\\Program.cs",
+              "RelativeToolTip": "ContactManager\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABkAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T16:45:53.819Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
