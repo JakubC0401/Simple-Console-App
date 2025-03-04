@@ -91,5 +91,6 @@
             // Act & Assert
             Assert.Throws<ArgumentException>(() => new Contact("Jan", "Nowak", "jan@wp.pl", invalidPhoneNumer));
         }
+
     }
 }

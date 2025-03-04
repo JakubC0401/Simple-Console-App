@@ -106,6 +106,46 @@ namespace ContactManager
             }
         }
 
+        public void RemoveContactByNameAndSurname()
+        {
+            Console.WriteLine("___USUWANIE KONTAKTU___");
+            Console.WriteLine("Podaj imię: ");
+            string firstName = Console.ReadLine();
+            Console.WriteLine("Podaj nazwisko: ");
+            string lastName = Console.ReadLine();
 
+            var contactToRemove = contacts.Find(c => c.FirstName.Equals(firstName, StringComparison.OrdinalIgnoreCase) && c.LastName.Equals(lastName, StringComparison.OrdinalIgnoreCase));
+
+            if (contactToRemove == null)
+            {
+                Console.WriteLine("Nie znaleziono kontaktu");
+                return;
+            }
+
+            Console.WriteLine( $"Czy to jest kontakt który chcesz usunąć: " + contactToRemove.ToString());
+
+            Console.WriteLine("Potwierdzasz usunięcie powyższego kontaktu: ");
+            Console.WriteLine("Y - tak");
+            Console.WriteLine("N - nie");
+                
+            string userInput = Console.ReadLine();
+
+           
+
+            switch (userInput.ToUpper())
+            {
+                case "Y":
+                    contacts.Remove(contactToRemove);
+                    Console.WriteLine("usunięto kontakt: " + contactToRemove);
+                    break;
+                case "N":
+                    Console.WriteLine("nie usunięto żadnego kontaktu");
+                    break;
+                default:
+                    Console.WriteLine("podano niepoprawną komendę");
+                    break;   
+            }
+
+        }
     }
 }
